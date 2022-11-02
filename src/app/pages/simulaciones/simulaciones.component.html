@@ -1,0 +1,18 @@
+<table class="table" *ngIf="simulaciones">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Fecha</th>
+      <th scope="col">Estudiantes</th>
+      <th scope="col">Clientes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let simulacion of simulaciones">
+      <td>{{simulacion.id}}</td>
+      <td>{{simulacion.fecha}}</td>
+      <td>{{simulacion.cantidad_estudiantes}}</td>
+      <td>{{simulacion.clientes_atendidos}}</td>
+    </tr>
+  </tbody>
+</table>
